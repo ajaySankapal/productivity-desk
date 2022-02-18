@@ -1,0 +1,32 @@
+ <Router>
+        <Routes>
+          <Route path="/" element={<Add />}>
+            <Route path="/task" index element={<Task />} />
+            <Route path="/learn" element={<Learn />}>
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/tweets" element={<Tweets />} />
+              <Route path="/books" index element={<Books />} />
+              <Route path="/reflect" index element={<Reflect />} />
+            </Route>
+          </Route>
+        </Routes>
+      </Router>
+      {/* list-links */}
+      <nav>
+        {navItems.map((items) => {
+          return (
+            <ul>
+              <Link to="">{items.name}</Link>
+            </ul>
+          );
+        })}
+      </nav>
+
+
+       <Route exact path="/" element={<Add />} />
+        <Route path="/task" element={<Task />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/tweets" element={<Tweets />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/reflect" element={<Reflect />} />

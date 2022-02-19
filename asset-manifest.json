@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/productivity-desk/static/css/main.2a4dc031.css",
-    "main.js": "/productivity-desk/static/js/main.32c921d5.js",
+    "main.js": "/productivity-desk/static/js/main.4a1b4f3a.js",
     "index.html": "/productivity-desk/index.html",
     "main.2a4dc031.css.map": "/productivity-desk/static/css/main.2a4dc031.css.map",
-    "main.32c921d5.js.map": "/productivity-desk/static/js/main.32c921d5.js.map"
+    "main.4a1b4f3a.js.map": "/productivity-desk/static/js/main.4a1b4f3a.js.map"
   },
   "entrypoints": [
     "static/css/main.2a4dc031.css",
-    "static/js/main.32c921d5.js"
+    "static/js/main.4a1b4f3a.js"
   ]
 }

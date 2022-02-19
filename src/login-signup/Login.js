@@ -21,6 +21,7 @@ function Login({ isAuth, setIsAuth }) {
       </Typography>
       <Typography
         variant="h5"
+        className="signInhead"
         style={{
           // marginLeft: "35.5rem",
           // marginTop: "17rem",
@@ -34,6 +35,7 @@ function Login({ isAuth, setIsAuth }) {
         sign-in to add something.
       </Typography>
       <Button
+        className="signInBtn"
         variant="contained"
         style={{
           marginLeft: "13rem",

@@ -38,6 +38,7 @@ const Books = ({ isAuth }) => {
       <>
         {!isAuth ? (
           <Typography
+            className="default"
             color="primary"
             variant="h5"
             style={{ margin: "18rem 0 0 35rem" }}

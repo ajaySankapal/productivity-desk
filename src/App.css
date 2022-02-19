@@ -78,7 +78,7 @@ a {
     width: 100%;
   }
   .naviGation {
-    margin-bottom: 25%;
+    margin-bottom: 40% !important;
   }
 
   .login-page {

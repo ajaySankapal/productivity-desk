@@ -85,7 +85,6 @@ export default function Modal({ setIsAuth }) {
     setType("");
     setText("");
     setInfo("");
-    console.log(content);
   };
 
   // when the app loads we need to listen to the databse and fetch new urls as they load

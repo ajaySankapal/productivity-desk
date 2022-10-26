@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/productivity-desk/static/css/main.09c59163.css",
-    "main.js": "/productivity-desk/static/js/main.65adedc2.js",
+    "main.css": "/productivity-desk/static/css/main.be685c74.css",
+    "main.js": "/productivity-desk/static/js/main.7dfa205a.js",
+    "static/media/todo4-rem_bg.png": "/productivity-desk/static/media/todo4-rem_bg.daa57e68c955564d9237.png",
     "index.html": "/productivity-desk/index.html",
-    "main.09c59163.css.map": "/productivity-desk/static/css/main.09c59163.css.map",
-    "main.65adedc2.js.map": "/productivity-desk/static/js/main.65adedc2.js.map"
+    "main.be685c74.css.map": "/productivity-desk/static/css/main.be685c74.css.map",
+    "main.7dfa205a.js.map": "/productivity-desk/static/js/main.7dfa205a.js.map"
   },
   "entrypoints": [
-    "static/css/main.09c59163.css",
-    "static/js/main.65adedc2.js"
+    "static/css/main.be685c74.css",
+    "static/js/main.7dfa205a.js"
   ]
 }

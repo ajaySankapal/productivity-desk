@@ -25,17 +25,29 @@ function App() {
       <div className='main'>
         <Routes>
           <Route path='/productivity-desk' element={<Home />} />
-          <Route path='/task' element={<Task isAuth={isAuth} />} />
-          <Route path='/learn' element={<Learn isAuth={isAuth} />} />
           <Route
-            path='/blogs'
+            path='/productivity-desk/task'
+            element={<Task isAuth={isAuth} />}
+          />
+          <Route
+            path='/productivity-desk/learn'
+            element={<Learn isAuth={isAuth} />}
+          />
+          <Route
+            path='/productivity-desk/blogs'
             element={<Blogs isAuth={isAuth} setIsAuth={setIsAuth} />}
           />
-          <Route path='/books' element={<Books isAuth={isAuth} />} />
-          <Route path='/reflect' element={<Reflect isAuth={isAuth} />} />
+          <Route
+            path='/productivity-desk/books'
+            element={<Books isAuth={isAuth} />}
+          />
+          <Route
+            path='/productivity-desk/reflect'
+            element={<Reflect isAuth={isAuth} />}
+          />
 
           <Route
-            path='/login'
+            path='/productivity-desk/login'
             element={<Login isAuth={isAuth} setIsAuth={setIsAuth} />}
           />
         </Routes>

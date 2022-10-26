@@ -58,32 +58,44 @@ const Navbar = ({ logo, setLogo, setIsAuth, isAuth }) => {
           </a>
           <ul className='right hide-on-med-and-down navlink-links'>
             <li>
-              <Link to='/' style={{ fontSize: '1.3rem' }}>
+              <Link to='/productivity-desk/' style={{ fontSize: '1.3rem' }}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to='/task' style={{ fontSize: '1.3rem' }}>
+              <Link to='/productivity-desk/task' style={{ fontSize: '1.3rem' }}>
                 Task
               </Link>
             </li>
             <li>
-              <Link to='/learn' style={{ fontSize: '1.3rem' }}>
+              <Link
+                to='/productivity-desk/learn'
+                style={{ fontSize: '1.3rem' }}
+              >
                 Learn
               </Link>
             </li>
             <li>
-              <Link to='/blogs' style={{ fontSize: '1.3rem' }}>
+              <Link
+                to='/productivity-desk/blogs'
+                style={{ fontSize: '1.3rem' }}
+              >
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to='/books' style={{ fontSize: '1.3rem' }}>
+              <Link
+                to='/productivity-desk/books'
+                style={{ fontSize: '1.3rem' }}
+              >
                 Books
               </Link>
             </li>
             <li>
-              <Link to='/reflect' style={{ fontSize: '1.3rem' }}>
+              <Link
+                to='/productivity-desk/reflect'
+                style={{ fontSize: '1.3rem' }}
+              >
                 Reflect
               </Link>
             </li>
@@ -93,7 +105,10 @@ const Navbar = ({ logo, setLogo, setIsAuth, isAuth }) => {
               </Link>
             </li> */}
             <li>
-              <Link to='/login' style={{ fontSize: '1.3rem' }}>
+              <Link
+                to='/productivity-desk/login'
+                style={{ fontSize: '1.3rem' }}
+              >
                 Login
               </Link>
             </li>
@@ -102,25 +117,25 @@ const Navbar = ({ logo, setLogo, setIsAuth, isAuth }) => {
       </nav>
       <ul className='sidenav' id='mobile-demo'>
         <li>
-          <Link to='/'>Home</Link>
+          <Link to='/productivity-desk'>Home</Link>
         </li>
         <li>
-          <Link to='/task'>Task</Link>
+          <Link to='/productivity-desk/task'>Task</Link>
         </li>
         <li>
-          <Link to='/learn'>Learn</Link>
+          <Link to='/productivity-desk/learn'>Learn</Link>
         </li>
         <li>
-          <Link to='/blogs'>Blogs</Link>
+          <Link to='/productivity-desk/blogs'>Blogs</Link>
         </li>
         <li>
-          <Link to='/books'>Books</Link>
+          <Link to='/productivity-desk/books'>Books</Link>
         </li>
         <li>
-          <Link to='/reflect'>Reflect</Link>
+          <Link to='/productivity-desk/reflect'>Reflect</Link>
         </li>
         <li>
-          <Link to='/login'>Login</Link>
+          <Link to='/productivity-desk/login'>Login</Link>
         </li>
       </ul>
     </div>

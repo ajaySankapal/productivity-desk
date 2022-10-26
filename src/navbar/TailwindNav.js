@@ -7,11 +7,11 @@ import Login from '../login-signup/Login'
 // import Button from "./Button";
 const TailwindNav = ({ isAuth, setIsAuth }) => {
   let Links = [
-    { name: 'home', link: '/' },
-    { name: 'task', link: '/task' },
-    { name: 'learn', link: '/learn' },
-    { name: 'blogs', link: '/blogs' },
-    { name: 'books', link: '/books' },
+    { name: 'home', link: '/productivity-desk' },
+    { name: 'task', link: '/productivity-desk/task' },
+    { name: 'learn', link: '/productivity-desk/learn' },
+    { name: 'blogs', link: '/productivity-desk/blogs' },
+    { name: 'books', link: '/productivity-desk/books' },
   ]
   let [open, setOpen] = useState(false)
   let navigate = useNavigate()

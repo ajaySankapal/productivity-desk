@@ -24,30 +24,18 @@ function App() {
       <TailwindNav isAuth={isAuth} setIsAuth={setIsAuth} />
       <div className='main'>
         <Routes>
-          <Route path='/productivity-desk' element={<Home />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/task' element={<Task isAuth={isAuth} />} />
+          <Route path='/learn' element={<Learn isAuth={isAuth} />} />
           <Route
-            path='/productivity-desk/task'
-            element={<Task isAuth={isAuth} />}
-          />
-          <Route
-            path='/productivity-desk/learn'
-            element={<Learn isAuth={isAuth} />}
-          />
-          <Route
-            path='/productivity-desk/blogs'
+            path='/blogs'
             element={<Blogs isAuth={isAuth} setIsAuth={setIsAuth} />}
           />
-          <Route
-            path='/productivity-desk/books'
-            element={<Books isAuth={isAuth} />}
-          />
-          <Route
-            path='/productivity-desk/reflect'
-            element={<Reflect isAuth={isAuth} />}
-          />
+          <Route path='/books' element={<Books isAuth={isAuth} />} />
+          <Route path='/reflect' element={<Reflect isAuth={isAuth} />} />
 
           <Route
-            path='/productivity-desk/login'
+            path='/login'
             element={<Login isAuth={isAuth} setIsAuth={setIsAuth} />}
           />
         </Routes>

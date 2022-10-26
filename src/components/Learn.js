@@ -40,7 +40,7 @@ const Learn = ({ isAuth }) => {
             className="default"
             color="primary"
             variant="h5"
-            style={{ margin: "18rem 0 0 35rem" }}
+            // style={{ margin: "18rem 0 0 35rem" }}
           >
             signIn with google to add learning sites.
           </Typography>
@@ -58,7 +58,7 @@ const Learn = ({ isAuth }) => {
       )}
       {content.map((task) => {
         return (
-          <div key={task.id}>
+          <div key={task.id} style={{ marginTop: "8rem" }}>
             {isAuth && task.author === auth.currentUser.uid && (
               <div style={{ padding: "0.3rem", marginLeft: "2rem" }}>
                 <LinkIcon />

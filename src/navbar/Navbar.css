@@ -1,0 +1,45 @@
+ a:hover {
+     color: #f59b42 !important;
+
+ }
+
+ .active {
+     background-color: red;
+ }
+
+ .nav2 {
+     background: #040404;
+     position: fixed;
+     z-index: 999;
+ }
+
+ a {
+     text-decoration: none !important;
+     list-style: none !important;
+ }
+
+ .brand-logo {
+     font-size: 1.2rem !important;
+ }
+.navlink-links Link{
+    color: #f59b42;
+}
+.login-right{
+    margin-left: 2rem;
+}
+.login-btn{
+    position: relative;
+    margin-left: 58%;
+}
+@media only screen and (max-width:1345px) {
+    .login-btn{
+        margin-left: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:1107px) {
+    .login-btn {
+        margin-left: 40% !important;
+    }
+
+}

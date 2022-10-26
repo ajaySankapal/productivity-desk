@@ -109,11 +109,14 @@ export default function Modal({ setIsAuth }) {
         variant="contained"
         className="modal-btn"
         style={{
-          backgroundColor: "#2979ff",
-          color: "white",
+          backgroundColor: "rgb(79 70 229)",
+          color: "#fff",
           margin: "1rem",
-          marginTop: "5rem",
-          marginLeft: "2rem",
+          marginTop: "30rem",
+          position: "absolute",
+          marginLeft: "85%",
+          position: "fixed",
+          zIndex: "9999",
         }}
       >
         Add New
@@ -162,7 +165,7 @@ export default function Modal({ setIsAuth }) {
               <TextField
                 id="info"
                 name="info"
-                label="write short info"
+                label="Add Task"
                 type="text"
                 value={info}
                 onChange={(e) => setInfo(e.target.value)}
@@ -173,7 +176,7 @@ export default function Modal({ setIsAuth }) {
               <TextField
                 id="url"
                 name="url"
-                label="add here"
+                label="Description"
                 multiline
                 type="text"
                 // variant="filled"

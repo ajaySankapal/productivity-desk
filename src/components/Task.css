@@ -1,0 +1,13 @@
+.edit-btn{
+    font-size: 1.4rem !important;
+    /* margin-left: 10%; */
+}
+.delete-btn{
+    /* margin-left: 10%; */
+
+    font-size: 1.4rem !important;
+}
+
+.del-btn > i:hover{
+    color:red !important;
+}

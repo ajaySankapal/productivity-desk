@@ -16,24 +16,6 @@ function Login({ isAuth, setIsAuth }) {
 
   return (
     <div className="login-page">
-      <Typography variant="h6" style={{ color: "#2979ff" }}>
-        Add your task, blogs link, book summaries and daily journal here.
-      </Typography>
-      <Typography
-        variant="h5"
-        className="signInhead"
-        style={{
-          // marginLeft: "35.5rem",
-          // marginTop: "17rem",
-          // position: "absolute",
-          marginTop: "1rem",
-          marginBottom: "1rem",
-          marginLeft: "8rem",
-          color: "#424242",
-        }}
-      >
-        sign-in to add something.
-      </Typography>
       <Button
         className="signInBtn"
         variant="contained"

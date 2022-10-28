@@ -1,28 +1,30 @@
-import { Button, Typography } from "@material-ui/core";
-import { signInWithPopup } from "firebase/auth";
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { auth, provider } from "../firebase/firebase";
-import GoogleIcon from "@mui/icons-material/Google";
+import { Button, Typography } from '@material-ui/core'
+import { signInWithPopup } from 'firebase/auth'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { auth, provider } from '../firebase/firebase'
+import GoogleIcon from '@mui/icons-material/Google'
 function Login({ isAuth, setIsAuth }) {
-  let navigate = useNavigate();
+  let navigate = useNavigate()
   const signInWithGoogle = () => {
-    signInWithPopup(auth, provider).then((result) => {
-      localStorage.setItem("isAuth", true);
-      setIsAuth(true);
-      navigate("/");
-    });
-  };
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        localStorage.setItem('isAuth', true)
+        setIsAuth(true)
+        navigate('/')
+      })
+      .catch((error) => console.log(error))
+  }
 
   return (
-    <div className="login-page">
+    <div className='login-page'>
       <Button
-        className="signInBtn"
-        variant="contained"
+        className='signInBtn'
+        variant='contained'
         style={{
-          marginLeft: "13rem",
-          backgroundColor: "#2979ff",
-          color: "#fff",
+          marginLeft: '13rem',
+          backgroundColor: '#2979ff',
+          color: '#fff',
         }}
         startIcon={<GoogleIcon />}
         onClick={signInWithGoogle}
@@ -30,7 +32,7 @@ function Login({ isAuth, setIsAuth }) {
         Sing In
       </Button>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login

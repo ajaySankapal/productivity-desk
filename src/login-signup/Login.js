@@ -10,6 +10,7 @@ function Login({ isAuth, setIsAuth }) {
     signInWithPopup(auth, provider)
       .then((result) => {
         localStorage.setItem('isAuth', true)
+        window.location.reload(true)
         setIsAuth(true)
         navigate('/')
       })

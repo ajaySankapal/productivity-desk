@@ -17,6 +17,7 @@ import {
   query,
   where,
 } from 'firebase/firestore'
+import Default from './Default'
 
 const Task = ({ isAuth }) => {
   const [content, setContent] = useState([])
@@ -57,20 +58,7 @@ const Task = ({ isAuth }) => {
         height: '100vh',
       }}
     >
-      <>
-        {!isAuth ? (
-          <Typography
-            className='default'
-            color='primary'
-            variant='h5'
-            // style={{ margin: "18rem 0 0 35rem" }}
-          >
-            signIn with google to add tasks.
-          </Typography>
-        ) : (
-          <Modal />
-        )}
-      </>
+      <>{!isAuth ? <Default /> : <Modal />}</>
 
       <div
         style={{

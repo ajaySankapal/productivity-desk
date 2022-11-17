@@ -11,6 +11,7 @@ import {
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '../firebase/firebase'
 import Modal from '../modal/Modal'
+import Default from './Default'
 
 const Reflect = ({ isAuth }) => {
   const [content, setContent] = useState([])
@@ -41,20 +42,7 @@ const Reflect = ({ isAuth }) => {
         width: '100%',
       }}
     >
-      <>
-        {!isAuth ? (
-          <Typography
-            className='default'
-            color='primary'
-            variant='h5'
-            // style={{ margin: "18rem 0 0 35rem" }}
-          >
-            How was your day? <br /> signIn with google to add.
-          </Typography>
-        ) : (
-          <Modal />
-        )}
-      </>
+      <>{!isAuth ? <Default /> : <Modal />}</>
       <div>
         <div>
           {content.map((task) => {

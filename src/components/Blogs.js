@@ -20,6 +20,7 @@ import { auth, db, provider } from '../firebase/firebase'
 import Modal from '../modal/Modal'
 import GoogleIcon from '@mui/icons-material/Google'
 import { signInWithPopup } from 'firebase/auth'
+import Default from './Default'
 
 const Blogs = ({ isAuth, setIsAuth }) => {
   const [content, setContent] = useState([])
@@ -58,14 +59,7 @@ const Blogs = ({ isAuth, setIsAuth }) => {
       <>
         {!isAuth ? (
           <>
-            <Typography
-              className='default'
-              color='primary'
-              variant='h5'
-              // style={{ margin: "18rem 0 0 35rem" }}
-            >
-              signIn with google to add blogs link.
-            </Typography>
+            <Default />
 
             <Button
               className='signInBtn'

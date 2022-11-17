@@ -10,6 +10,7 @@ import {
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '../firebase/firebase'
 import Modal from '../modal/Modal'
+import Default from './Default'
 
 const Books = ({ isAuth }) => {
   const [content, setContent] = useState([])
@@ -35,20 +36,7 @@ const Books = ({ isAuth }) => {
 
   return (
     <div>
-      <>
-        {!isAuth ? (
-          <Typography
-            className='default'
-            color='primary'
-            variant='h5'
-            // style={{ margin: "18rem 0 0 35rem" }}
-          >
-            signIn with google to add book summaries.
-          </Typography>
-        ) : (
-          <Modal />
-        )}
-      </>
+      <>{!isAuth ? <Default /> : <Modal />}</>
 
       <div
         style={{

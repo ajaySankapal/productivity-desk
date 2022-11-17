@@ -15,7 +15,7 @@ const Default = () => {
       }}
     >
       <div className='child-container'>
-        <h3>Sign In to Add Something!</h3>
+        <h1>Sign In to Add Something!</h1>
       </div>
     </div>
   )
